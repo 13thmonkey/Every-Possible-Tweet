@@ -76,11 +76,12 @@ def is_connected():
 def update_answers(answer, answers):
 
     global ANS_PATH
-
+    
     answer = str(answer)
-    with open(ANS_PATH, 'a') as ansf:
-        ansf.write(answer + '\n')
-        return answers + [answer]
+    answers.append(answer)
+    with open(ANS_PATH, 'w') as ansf:
+        ansf.write(''.join([x + '\n' for x in answers]))
+        return answers
 
 
 def load_filter():
