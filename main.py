@@ -23,11 +23,11 @@ ANS_PATH = "answers.txt"
 LOG_PATH = "log.txt"
 REPLACEMENTS = {
     "@": '',
-    "&euro;": '',
-    "&amp;": '',
-    "&lt;": '',
-    "&gt;": '',
-    "&micro;": '',
+    "&euro;": '€',
+    "&amp;": '&',
+    "&lt;": '<',
+    "&gt;": '>',
+    "&micro;": 'μ',
     "trump": 'drumpf'
 }
 # necessary functions
